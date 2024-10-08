@@ -10,15 +10,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
-
 /**
  * /sample3へのリクエストを扱うクラス authenticateの設定をしていれば， /sample3へのアクセスはすべて認証が必要になる
  */
 @Controller
 @RequestMapping("/sample3")
 public class Sample31Controller {
-
 
   @GetMapping("step1")
   public String sample31() {
@@ -54,6 +51,5 @@ public class Sample31Controller {
     model.addAttribute("hikukekka", kekka);
     return "sample33.html";
   }
-
 
 }
